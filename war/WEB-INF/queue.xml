@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue-entries>
+	<queue>
+		<name>TimedMessageQueue</name>
+		<rate>100/s</rate>
+		<bucket-size>100</bucket-size>
+		<retry-parameters>
+			<task-retry-limit>3</task-retry-limit>
+			<min-backoff-seconds>1</min-backoff-seconds>
+			<max-backoff-seconds>21</max-backoff-seconds>
+		</retry-parameters>
+	</queue>
+</queue-entries>
